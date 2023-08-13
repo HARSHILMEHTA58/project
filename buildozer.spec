@@ -1,13 +1,13 @@
 [app]
 
 # (str) Title of your application
-title = My First App
+title = My Application
 
 # (str) Package name
-package.name = myfirstapp
+package.name = mytapp
 
 # (str) Package domain (needed for android/ios packaging)
-package.domain = org.myfirstapp
+package.domain = org.test
 
 # (str) Source code where the main.py live
 source.dir = .
@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
 # (list) List of inclusions using pattern matching
-#source.include_patterns = assets/*,images/*.png
+#source.include_patterns = assets/,images/.png
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
@@ -26,18 +26,18 @@ source.include_exts = py,png,jpg,kv,atlas
 
 # (list) List of exclusions using pattern matching
 # Do not prefix with './'
-#source.exclude_patterns = license,images/*/*.jpg
+#source.exclude_patterns = license,images//.jpg
 
 # (str) Application versioning (method 1)
 version = 0.1
 
 # (str) Application versioning (method 2)
-# version.regex = __version__ = ['"](.*)['"]
+# version.regex = _version_ = ['"](.*)['"]
 # version.filename = %(source.dir)s/main.py
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy==2.0.0,kivymd==0.104.1
+requirements = python3,kivy
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -81,7 +81,7 @@ fullscreen = 0
 # red, blue, green, black, white, gray, cyan, magenta, yellow, lightgray,
 # darkgray, grey, lightgrey, darkgrey, aqua, fuchsia, lime, maroon, navy,
 # olive, purple, silver, teal.
-android.presplash_color = #FFFFFF
+#android.presplash_color = #FFFFFF
 
 # (string) Presplash animation using Lottie format.
 # see https://lottiefiles.com/ for examples and https://airbnb.design/lottie/
@@ -422,7 +422,7 @@ warn_on_root = 1
 #    Instead of doing:
 #
 #[app]
-#source.exclude_patterns = license,data/audio/*.wav,data/images/original/*
+#source.exclude_patterns = license,data/audio/.wav,data/images/original/
 #
 #    This can be translated into:
 #
